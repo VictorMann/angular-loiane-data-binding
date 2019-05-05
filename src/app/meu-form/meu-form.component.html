@@ -1,0 +1,35 @@
+<article>
+    <h3>Two-way-binding</h3>
+    <div class="row">
+
+      <div class="col-sm-2">
+        <b>[value]="nome" (input)="nome = $event.target.value"</b>
+        <input type="text"
+        [value]="nome"
+        (input)="nome = $event.target.value">
+        <p>Dado da variavel <code>nome</code>: {{ nome }}</p>
+      </div>
+
+      <div class="col-sm-2">
+        <b>[ngModel]="nome" (ngModelChange)="nome = $event"</b>
+        <input type="text"
+        [ngModel]="nome"
+        (ngModelChange)="nome = $event">
+      </div>
+
+      <div class="col-sm-2">
+        <b>[(ngModel)]="nome"</b>
+        <input type="text" [(ngModel)]="nome">
+        <input type="text" bindon-ngModel="nome">
+      </div>
+
+      <div class="col-sm-2">
+          <b>objeto</b>
+          Nome <input type="text" [(ngModel)]="pessoa.nome">
+          Idade <input type="text" [(ngModel)]="pessoa.idade">
+
+          <p>Meu nome é {{pessoa.nome }}, e tenho {{ pessoa.idade }} anos</p>
+        </div>
+
+    </div>
+  </article>
