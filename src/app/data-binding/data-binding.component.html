@@ -81,6 +81,10 @@
     <div>
         <app-curso [nome]="nomeDoCurso"></app-curso>
     </div>
+    <div>
+      <!-- quando valor é fixo não precisa colocar entre colchetes [valor]="10" -->
+      <contador valor="10" (mudouValor)="onMudouValor($event)"></contador>
+    </div>
   </article>
 
 </section>

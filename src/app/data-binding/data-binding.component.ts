@@ -48,6 +48,10 @@ export class DataBindingComponent implements OnInit {
     this.isMouseOver = !this.isMouseOver;
   }
 
+  onMudouValor(event) {
+    console.log(event);
+  }
+
   ngOnInit() {
   }
 
