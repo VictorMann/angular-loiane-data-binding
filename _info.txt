@@ -1,0 +1,13 @@
+--
+-- definindo um pré-processador
+--
+ng new <nome-projeto> --style=sass
+ng new <nome-projeto> --style=less
+ng new <nome-projeto> --style=stylus
+
+--
+-- definindo um pré-processador (projeto já existene)
+--
+ng set defaults.styleExt scss
+ng set defaults.styleExt less
+ng set defaults.styleExt styl
